@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ca.georgiancollege.ice6.databinding.ActivityOptionsBinding
@@ -26,10 +27,12 @@ class OptionsActivity : AppCompatActivity()
          if (isChecked)
          {
             Toast.makeText(this, "Dark Theme Selected", Toast.LENGTH_SHORT).show()
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
          }
          else
          {
             Toast.makeText(this, "Light Theme Selected", Toast.LENGTH_SHORT).show()
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
          }
       }
    }
