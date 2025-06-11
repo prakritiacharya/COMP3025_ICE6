@@ -1,6 +1,7 @@
 package ca.georgiancollege.ice6
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,10 +27,10 @@ class MainActivity : AppCompatActivity()
 
         Calculator(binding)
         binding.optionButton?.setOnClickListener {
+            val isNight = (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
             val intent = Intent(this, OptionsActivity::class.java)
+            intent.putExtra("isNight", isNight)
             startActivity(intent)
         }
-
-
     }
 }
