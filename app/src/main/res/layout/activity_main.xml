@@ -102,7 +102,7 @@
             android:id="@+id/divideButton"
             style="@style/OperatorButtonStyle"
             android:tag="divide"
-            android:text="divide_button_text"
+            android:text="@string/divide_button_text"
             tools:ignore="ButtonStyle,TextSizeCheck" />
 
     </LinearLayout>
