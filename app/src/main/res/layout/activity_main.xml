@@ -26,12 +26,12 @@
         <Button
             android:id="@+id/optionButton"
             style="@style/ModifierButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="110dp"
             android:layout_height="49dp"
             android:layout_weight="0"
             android:tag="toggle"
             android:text="@string/toggleButton"
-            android:translationX="300dp"
+            android:translationX="270dp"
             tools:ignore="VisualLintBounds,TextSizeCheck" />
     </LinearLayout>
 
@@ -102,7 +102,7 @@
             android:id="@+id/divideButton"
             style="@style/OperatorButtonStyle"
             android:tag="divide"
-            android:text="@string/divide_button_text"
+            android:text="divide_button_text"
             tools:ignore="ButtonStyle,TextSizeCheck" />
 
     </LinearLayout>

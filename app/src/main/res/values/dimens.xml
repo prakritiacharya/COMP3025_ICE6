@@ -16,4 +16,6 @@
     <dimen name="logo_width">300dp</dimen>
     <dimen name="logo_height">300dp</dimen>
     <dimen name="button_layout_height">60dp</dimen>
+    <dimen name="layout_height_option">33dp</dimen>
+    <dimen name="layout_width_option">267dp</dimen>
 </resources>
