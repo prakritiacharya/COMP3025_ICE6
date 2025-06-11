@@ -24,7 +24,8 @@
             android:layout_height="33dp"
             android:layout_marginEnd="8dp"
             android:text="@string/Theme"
-            android:textSize="16sp" />
+            android:textAlignment="center"
+            android:textSize="25sp" />
 
         <ToggleButton
             android:id="@+id/ThemeToggleButton"
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="false"
+            android:textAlignment="center"
             android:textOff="off"
             android:textOn="on" />
 

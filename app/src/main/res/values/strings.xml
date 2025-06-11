@@ -23,6 +23,6 @@
     <string name="equals_button_text">\u003d</string>
     <string name="spinner_icon">\uf110</string>
     <string name="toggleButton">\uf141</string>
-    <string name="Theme">Dark</string>
+    <string name="Theme">Light</string>
 
 </resources>

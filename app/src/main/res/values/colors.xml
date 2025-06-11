@@ -5,4 +5,5 @@
     <color name="burnt_orange">#CC5500</color>
     <color name="light_grey">#C4C4C4</color>
     <color name="bright_orange">#FFA500</color>
+    <color name="background_light">#FFFFFFFF</color>
 </resources>
