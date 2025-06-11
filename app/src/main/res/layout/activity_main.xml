@@ -10,6 +10,32 @@
 
 
     <LinearLayout
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/result_row_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/optionButton"
+            style="@style/ModifierButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="0"
+            android:tag="toggle"
+            android:text="@string/toggleButton"
+            android:translationX="300dp"
+            tools:ignore="VisualLintBounds,TextSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/Row6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -238,5 +264,6 @@
             android:text="@string/equals_button_text"
             tools:ignore="ButtonStyle,TextSizeCheck" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
