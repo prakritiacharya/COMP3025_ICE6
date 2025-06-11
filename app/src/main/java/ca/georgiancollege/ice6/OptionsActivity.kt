@@ -18,6 +18,10 @@ class OptionsActivity : AppCompatActivity()
       binding = ActivityOptionsBinding.inflate(layoutInflater)
       enableEdgeToEdge()
       setContentView(binding.root)
+
+      val isNight = intent.getBooleanExtra("isNight", false)
+      binding.ThemeToggleButton.isChecked = isNight
+
       ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
          val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
          v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
